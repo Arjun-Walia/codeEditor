@@ -45,6 +45,6 @@ func handleCodeExecution(c *gin.Context) {
 func main() {
 	r := gin.Default()
 	r.POST("/execute", handleCodeExecution)
-	fmt.Println("Server is running on port 8080")
+	fmt.Println("\033[92mServer is running on port 8080\033[0m")
 	r.Run(":8080")
 }
