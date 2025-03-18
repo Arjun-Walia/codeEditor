@@ -26,7 +26,7 @@ func handleCodeExecution(c *gin.Context) {
 	fmt.Println("\033[34mCode: \033[0m", requestBody.Code)
 	fmt.Println("\033[34mInput: \033[0m", requestBody.Input)
 
-	// Call executeCode function (from executor.go)
+	// Call executeCode function
 	output, err := executeCode(requestBody.Language, requestBody.Code, requestBody.Input)
 
 	if err != "" {
